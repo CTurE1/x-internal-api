@@ -31,6 +31,9 @@ jobs:
       - name: Capture ops
         run: python scripts/capture_ops.py
 
+      - name: Validate output
+        run: python scripts/validate_ops.py
+
       - name: Commit if changed
         id: commit
         run: |
