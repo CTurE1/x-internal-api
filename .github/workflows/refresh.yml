@@ -1,0 +1,54 @@
+name: refresh
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"     # every 6 hours
+  workflow_dispatch: {}        # manual run from Actions tab
+
+permissions:
+  contents: write              # needed for the auto-commit step
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2       # need HEAD~1 for drift diff
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Capture ops
+        run: python scripts/capture_ops.py
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          git config user.name "x-internal-api-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/graphql_ops.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "no drift in graphql_ops.json"
+          else
+            git add data/
+            git commit -m "auto: refresh ops $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Notify drift
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_IDS: ${{ secrets.TELEGRAM_ADMIN_CHAT_IDS }}
+        run: python scripts/notify_drift.py
