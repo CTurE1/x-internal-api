@@ -141,8 +141,11 @@ def main() -> int:
     ts_path = args.output_dir / "captured_at.txt"
     ts_json_path = args.output_dir / "captured_at.json"
 
+    # captured_at is intentionally NOT in graphql_ops.json. Timestamp lives in
+    # data/captured_at.{txt,json}. Keeping it out of the main payload means
+    # `git diff` only fires when ops actually changed — no every-6h commit
+    # noise + no false-positive drift alerts.
     payload = {
-        "captured_at": captured_at,
         "ops_count": len(ops),
         "ops": dict(sorted(ops.items())),
     }

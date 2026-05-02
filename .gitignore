@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 .venv/
 .env
+data/captured_at.txt
+data/captured_at.json

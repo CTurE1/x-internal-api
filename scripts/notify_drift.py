@@ -69,8 +69,18 @@ def _diff_ops(prev: dict[str, Any], cur: dict[str, Any]) -> dict[str, list[str]]
     }
 
 
+def _read_captured_at() -> str:
+    """Read timestamp from sidecar file (graphql_ops.json no longer carries it)."""
+    try:
+        with open("data/captured_at.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+            return str(data.get("captured_at", "?"))
+    except (OSError, json.JSONDecodeError):
+        return "?"
+
+
 def _format_message(diff: dict[str, list[str]], cur: dict[str, Any]) -> str:
-    captured = cur.get("captured_at", "?")
+    captured = _read_captured_at()
     count = cur.get("ops_count", "?")
     lines: list[str] = [
         "🔔 <b>x-internal-api drift</b>",

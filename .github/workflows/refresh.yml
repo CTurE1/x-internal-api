@@ -40,7 +40,7 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "no drift in graphql_ops.json"
           else
-            git add data/
+            git add data/graphql_ops.json
             git commit -m "auto: refresh ops $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
