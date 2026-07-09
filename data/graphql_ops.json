@@ -1,5 +1,5 @@
 {
-  "ops_count": 157,
+  "ops_count": 158,
   "ops": {
     "AddContentDisclosure": {
       "queryId": "D1nwFlsu_qHsX92YzoRaaA",
@@ -3450,6 +3450,24 @@
       "method": "POST",
       "featureSwitches": [],
       "fieldToggles": []
+    },
+    "PinnableTimelines": {
+      "queryId": "Tx2WqUDEDSYRA7IKfQReAg",
+      "operationName": "PinnableTimelines",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [
+        "profile_label_improvements_pcf_label_in_post_enabled",
+        "responsive_web_profile_redirect_enabled",
+        "rweb_tipjar_consumption_enabled",
+        "verified_phone_label_enabled",
+        "responsive_web_graphql_skip_user_profile_image_extensions_enabled",
+        "responsive_web_graphql_timeline_navigation_enabled"
+      ],
+      "fieldToggles": [
+        "withPayments",
+        "withAuxiliaryUserLabels"
+      ]
     },
     "PinnedTimelines": {
       "queryId": "TRRXFHdz_saNdA9vVa94cg",
