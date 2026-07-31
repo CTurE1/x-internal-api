@@ -3226,14 +3226,6 @@
       "featureSwitches": [],
       "fieldToggles": []
     },
-    "EnableLoggedOutWebNotifications": {
-      "queryId": "BqIHKmwZKtiUBPi07jKctg",
-      "operationName": "EnableLoggedOutWebNotifications",
-      "operationType": "mutation",
-      "method": "POST",
-      "featureSwitches": [],
-      "fieldToggles": []
-    },
     "EnableVerifiedPhoneLabel": {
       "queryId": "C3RJFfMsb_KcEytpKmRRkw",
       "operationName": "EnableVerifiedPhoneLabel",
@@ -7394,6 +7386,14 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls"
       ]
+    },
+    "UserUnderTheHoodReport": {
+      "queryId": "nYJzdcaWlKpGPO5CbGiLRQ",
+      "operationName": "UserUnderTheHoodReport",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
     },
     "UserVideoTimeline": {
       "queryId": "V0UHJCuXkqBVjbsvCi6rxQ",
