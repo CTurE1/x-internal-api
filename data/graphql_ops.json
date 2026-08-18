@@ -1,5 +1,5 @@
 {
-  "ops_count": 298,
+  "ops_count": 299,
   "ops": {
     "ActionTrend": {
       "queryId": "imr0xefZmILHTgb6-9pe3g",
@@ -5477,6 +5477,23 @@
       "method": "POST",
       "featureSwitches": [],
       "fieldToggles": []
+    },
+    "QuickPromoteBoostContentCheck": {
+      "queryId": "hOmo4HnkN3_qLP1wsPLpOQ",
+      "operationName": "QuickPromoteBoostContentCheck",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [
+        "responsive_web_graphql_timeline_navigation_enabled",
+        "profile_label_improvements_pcf_label_in_post_enabled",
+        "responsive_web_profile_redirect_enabled",
+        "rweb_tipjar_consumption_enabled",
+        "verified_phone_label_enabled"
+      ],
+      "fieldToggles": [
+        "withPayments",
+        "withAuxiliaryUserLabels"
+      ]
     },
     "QuickPromoteEligibility": {
       "queryId": "LtpCXh66W-uXh7u7XSRA8Q",
