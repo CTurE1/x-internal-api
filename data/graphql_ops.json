@@ -1,5 +1,5 @@
 {
-  "ops_count": 299,
+  "ops_count": 323,
   "ops": {
     "ActionTrend": {
       "queryId": "imr0xefZmILHTgb6-9pe3g",
@@ -3002,6 +3002,14 @@
       "featureSwitches": [],
       "fieldToggles": []
     },
+    "CurrentNflWeek": {
+      "queryId": "39djCiLUxjpUpGgLWjaDOA",
+      "operationName": "CurrentNflWeek",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "DataSaverMode": {
       "queryId": "xF6sXnKJfS2AOylzxRjf6A",
       "operationName": "DataSaverMode",
@@ -3491,6 +3499,14 @@
     "FinanceSearchTags": {
       "queryId": "4VTsYZ3r4xYW9S0Rys5G0A",
       "operationName": "FinanceSearchTags",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "FollowedTeams": {
+      "queryId": "Tx6_C2uyXyaW3TRIPy-6bw",
+      "operationName": "FollowedTeams",
       "operationType": "query",
       "method": "GET",
       "featureSwitches": [],
@@ -5255,6 +5271,157 @@
         "withDisallowedReplyControls"
       ]
     },
+    "NFLGameEventPage": {
+      "queryId": "vaG3cfin-Qb5eJvR9ARJ9g",
+      "operationName": "NFLGameEventPage",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NFLGameHydrate": {
+      "queryId": "owTfEdmE27mshVe9VbVxQA",
+      "operationName": "NFLGameHydrate",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NFLGameOdds": {
+      "queryId": "BCsiVB5FamwjLHyEFBIOMA",
+      "operationName": "NFLGameOdds",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NFLGameRoster": {
+      "queryId": "9TUJ9AAIeiipt6obVB1ExQ",
+      "operationName": "NFLGameRoster",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [
+        "profile_label_improvements_pcf_label_in_post_enabled",
+        "responsive_web_profile_redirect_enabled",
+        "rweb_tipjar_consumption_enabled",
+        "verified_phone_label_enabled",
+        "responsive_web_graphql_timeline_navigation_enabled"
+      ],
+      "fieldToggles": [
+        "withPayments",
+        "withAuxiliaryUserLabels"
+      ]
+    },
+    "NFLLiveGame": {
+      "queryId": "slZXl76T2-WEsssuS03EIA",
+      "operationName": "NFLLiveGame",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NFLSchedule": {
+      "queryId": "HHcXzCMLxv1WX0qZM3qamg",
+      "operationName": "NFLSchedule",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NFLSeasonStats": {
+      "queryId": "Mj5SLvkKQ6IYU97DH4xsGw",
+      "operationName": "NFLSeasonStats",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NFLStandings": {
+      "queryId": "gk2q95FZ4kaXjIsVvVSlEw",
+      "operationName": "NFLStandings",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NFLTeams": {
+      "queryId": "SCRp4Wlk-ARmNAtNq7nghg",
+      "operationName": "NFLTeams",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NFLWeeklySchedule": {
+      "queryId": "IULyamAPBR0C--GrUoXQIQ",
+      "operationName": "NFLWeeklySchedule",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NFLWeeklyStats": {
+      "queryId": "N_z1RSoLOEdzDCcBvTAHdQ",
+      "operationName": "NFLWeeklyStats",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NflTop100": {
+      "queryId": "GqYYI4uyubKiXbTMGp66gg",
+      "operationName": "NflTop100",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [
+        "creator_subscriptions_tweet_preview_api_enabled",
+        "profile_label_improvements_pcf_label_in_post_enabled",
+        "responsive_web_profile_redirect_enabled",
+        "rweb_tipjar_consumption_enabled",
+        "verified_phone_label_enabled",
+        "premium_content_api_read_enabled",
+        "communities_web_enable_tweet_community_results_fetch",
+        "c9s_tweet_anatomy_moderator_badge_enabled",
+        "responsive_web_grok_analyze_button_fetch_trends_enabled",
+        "responsive_web_grok_analyze_post_followups_enabled",
+        "rweb_cashtags_composer_attachment_enabled",
+        "responsive_web_jetfuel_frame",
+        "responsive_web_grok_share_attachment_enabled",
+        "responsive_web_grok_annotations_enabled",
+        "articles_preview_enabled",
+        "responsive_web_edit_tweet_api_enabled",
+        "rweb_conversational_replies_downvote_enabled",
+        "graphql_is_translatable_rweb_tweet_is_translatable_enabled",
+        "view_counts_everywhere_api_enabled",
+        "longform_notetweets_consumption_enabled",
+        "responsive_web_twitter_article_tweet_consumption_enabled",
+        "content_disclosure_indicator_enabled",
+        "content_disclosure_ai_generated_indicator_enabled",
+        "responsive_web_grok_show_grok_translated_post",
+        "responsive_web_grok_analysis_button_from_backend",
+        "post_ctas_fetch_enabled",
+        "rweb_cashtags_enabled",
+        "freedom_of_speech_not_reach_fetch_enabled",
+        "standardized_nudges_misinfo",
+        "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled",
+        "longform_notetweets_rich_text_read_enabled",
+        "longform_notetweets_inline_media_enabled",
+        "responsive_web_grok_image_annotation_enabled",
+        "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_graphql_timeline_navigation_enabled",
+        "responsive_web_grok_community_note_auto_translation_is_enabled"
+      ],
+      "fieldToggles": [
+        "withPayments",
+        "withAuxiliaryUserLabels",
+        "withArticleRichContentState",
+        "withArticlePlainText",
+        "withArticleSummaryText",
+        "withArticleVoiceOver",
+        "withGrokAnalyze",
+        "withDisallowedReplyControls"
+      ]
+    },
     "NotABotCheckoutUrlWithEligibility": {
       "queryId": "RM4x9h3tF8bCn69VV3-gRg",
       "operationName": "NotABotCheckoutUrlWithEligibility",
@@ -5461,6 +5628,22 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls"
       ]
+    },
+    "ProfileSeasonSchedule": {
+      "queryId": "9G812UOpwKocbrWXOy8gGw",
+      "operationName": "ProfileSeasonSchedule",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "ProfileTeamRoster": {
+      "queryId": "8OT1elM63NCHsPe5LBGHbw",
+      "operationName": "ProfileTeamRoster",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
     },
     "ProfileUserPhoneState": {
       "queryId": "5kUWP8C1hcd6omvg6HXXTQ",
@@ -5768,6 +5951,70 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls"
       ]
+    },
+    "SportsHubTrends": {
+      "queryId": "BjydpXiXlskVEro9jODW8g",
+      "operationName": "SportsHubTrends",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SportsProductCreateGameReminder": {
+      "queryId": "-5tvdMlTVLfOX1wki-fyiQ",
+      "operationName": "SportsProductCreateGameReminder",
+      "operationType": "mutation",
+      "method": "POST",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SportsProductDeleteGameReminder": {
+      "queryId": "uSXCv-DvptcAyUAYbsHdLA",
+      "operationName": "SportsProductDeleteGameReminder",
+      "operationType": "mutation",
+      "method": "POST",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SportsProductFollowTeam": {
+      "queryId": "Zi65vXjUg0tvM_DDX-c0Vw",
+      "operationName": "SportsProductFollowTeam",
+      "operationType": "mutation",
+      "method": "POST",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SportsProductFollowedTeams": {
+      "queryId": "_e2ZKcVwSxnd8OVZG8ehlg",
+      "operationName": "SportsProductFollowedTeams",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SportsProductGameReminders": {
+      "queryId": "sgwcwOMA1T8DlBek9WtATQ",
+      "operationName": "SportsProductGameReminders",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SportsProductNflTeams": {
+      "queryId": "EsdsoZUz9pJMpmswItY0Pg",
+      "operationName": "SportsProductNflTeams",
+      "operationType": "query",
+      "method": "GET",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SportsProductUnfollowTeam": {
+      "queryId": "bxeLvvwpNT6ORoxXHy3Fnw",
+      "operationName": "SportsProductUnfollowTeam",
+      "operationType": "mutation",
+      "method": "POST",
+      "featureSwitches": [],
+      "fieldToggles": []
     },
     "SubscribeToScheduledSpace": {
       "queryId": "Sxn4YOlaAwEKjnjWV0h7Mw",
